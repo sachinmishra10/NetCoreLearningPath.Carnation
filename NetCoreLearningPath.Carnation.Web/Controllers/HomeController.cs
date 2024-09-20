@@ -14,6 +14,7 @@ namespace NetCoreLearningPath.Carnation.Web.Controllers
 
     //Cherry Pick1
     //Cherry Pick2
+    //Cherry Pick2
 
 
     public class HomeController : Controller
