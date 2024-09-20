@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace NetCoreLearningPath.Carnation.Web.Controllers
 {
-    //First Controller
+    //First Controller changed
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
