@@ -35,6 +35,11 @@ namespace NetCoreLearningPath.Carnation.Web.Controllers
             return View();
         }
 
+        public IActionResult IndexTest1()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
