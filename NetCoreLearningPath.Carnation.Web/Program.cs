@@ -1,4 +1,5 @@
 var MyAllowSpecificOrigins ="";
+var MyAllowSpecificOrigins1 ="";
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,6 +15,19 @@ builder.Services.AddCors(options =>
                                                   .AllowAnyMethod();
                           });
 });
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(MyAllowSpecificOrigins1,
+                          policy =>
+                          {
+                              policy.WithOrigins("http://example.com",
+                                                  "http://www.contoso.com")
+                                                  .AllowAnyHeader()
+                                                  .AllowAnyMethod();
+                          });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
