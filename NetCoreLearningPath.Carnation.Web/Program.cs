@@ -39,6 +39,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseCors(MyAllowSpecificOrigins);
+app.UseCors(MyAllowSpecificOrigins1);
 
 app.UseAuthorization();
 
