@@ -44,6 +44,8 @@ app.UseRouting();
 
 //Commit All & Push
 
+//Commit All & Push & Pull
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
